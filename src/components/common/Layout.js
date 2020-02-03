@@ -42,8 +42,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                         <img className="site-logo-top" src={site.icon} alt={site.title} />
                                         : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                     }
-                                </Link>
                                     <p className="site-title-top">{site.title}</p>
+                                </Link>
 
                             </div>
                             <nav className="site-nav">
@@ -67,16 +67,16 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
                         <div className="container">
                             { isHome ?
-                                <div className="site-banner">
-                                    <Link to="/">
+
+                                    <Link className="site-banner" to="/">
                                         {site.logo ?
                                             <img className="site-logo" src={site.icon} alt={site.title} />
                                             : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                         }
+                                        <h1 className="site-banner-title">{site.title}</h1>
+                                        <p className="site-banner-desc">{site.description}</p>
                                     </Link>
-                                    <h1 className="site-banner-title">{site.title}</h1>
-                                    <p className="site-banner-desc">{site.description}</p>
-                                </div> :
+ :
                                 null}
                         </div>
 
