@@ -522,10 +522,11 @@ h6 {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    width: 100%;
 }
 
 .container {
-    max-width: 1120px;
+    max-width: 90%;
     margin: 0 auto;
     padding: 0 4vw;
 }
@@ -661,18 +662,21 @@ h6 {
 /* Header
 /* ---------------------------------------------------------- */
 
+
 .site-head {
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
     background: var(--color-base);
-    background-position: center;
+    background-position: center top;
     background-size: cover;
+    height: 100%;
+
 }
 
 .site-nav-item {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 7px 12px;
     color: #fff;
     opacity: 0.7;
 }
@@ -687,14 +691,32 @@ h6 {
     margin: -5px 0 0;
 }
 
-.site-logo {
-    height: 25px;
+
+.site-logo-top {
+    height: 55px;
+    display: inline;
+    margin: 0;
+}
+
+.site-title-top {
+    display: inline;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 3.5rem;
 }
 
 .site-mast {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: url('http://i.stack.imgur.com/jGlzr.png') 
+    no-repeat 0 0 scroll;
+    background-color:#0C0C0C;    
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 200%
 }
 
 .site-mast-right {
@@ -711,14 +733,21 @@ h6 {
     margin: 0 auto;
     padding: 10vw 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
+.site-logo {
+    display: inline;
+    width: 15rem;
+}
 .site-banner-title {
+    display: inline;
+    color: #fff;
     margin: 0;
     padding: 0;
-    color: #fff;
-    font-size: 4rem;
-    line-height: 1.3em;
+    font-size: 12rem;
 }
 
 .site-banner-desc {
@@ -732,8 +761,7 @@ h6 {
 .site-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 15px 0 0 0;
+    width: 70%
 }
 
 .site-nav-left {
@@ -861,6 +889,7 @@ h6 {
 
 /* Tag Archives
 /* ---------------------------------------------------------- */
+
 
 .tag-header {
     max-width: 690px;
