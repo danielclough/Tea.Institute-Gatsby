@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://immodestea.com",
-    "contentApiKey": "cfca0d8fa7e2dd5106826ffa17"
+    "apiUrl": "https://tea.institute",
+    "contentApiKey": "435370a79744f402eb95e5040a"
   },
   "production": {
-    "apiUrl": "https://immodestea.com",
-    "contentApiKey": " cfca0d8fa7e2dd5106826ffa17"
+    "apiUrl": "https://tea.institute",
+    "contentApiKey": "435370a79744f402eb95e5040a"
   }
 }
