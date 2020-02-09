@@ -1,6 +1,6 @@
 const path = require(`path`)
 
-const config = require(`./src/utils/siteConfig`)
+const config = require('./config');
 const generateRSSFeed = require(`./src/utils/rss/generate-feed`)
 
 let ghostConfig
@@ -31,6 +31,7 @@ try {
 */
 module.exports = {
     siteMetadata: {
+        title: config.siteTitle,
         siteUrl: config.siteUrl,
     },
     plugins: [
@@ -66,8 +67,9 @@ module.exports = {
          *  Utility Plugins
          */
         {
-            resolve: `gatsby-plugin-ghost-manifest`,
-            options: {
+          resolve: `gatsby-plugin-manifest`,
+          options: {
+            name: config.manifestName,
                 short_name: config.shortTitle,
                 start_url: `/`,
                 background_color: config.backgroundColor,
@@ -183,5 +185,6 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
+        'gatsby-plugin-sass',
     ],
 }
