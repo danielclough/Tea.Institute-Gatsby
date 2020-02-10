@@ -394,11 +394,10 @@
 		border-radius: 3px;
 		border: none;
 		color: inherit;
-		display: block;
 		outline: 0;
 		padding: 0 1em;
 		text-decoration: none;
-		width: 100%;
+ 		width: 60%;
 
 		&:invalid {
 			box-shadow: none;
@@ -1110,7 +1109,7 @@
 			}
 
 			.content {
-				@include padding(4em, 3em);
+				@include padding(1em, 3em);
 				max-width: none;
 				text-align: center;
 				width: 100%;
@@ -1119,7 +1118,7 @@
 
 		@include breakpoint('<=small') {
 			.content {
-				@include padding(3em, 2em);
+				@include padding(.5em, 2em);
 			}
 		}
 	}

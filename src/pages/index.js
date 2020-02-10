@@ -153,28 +153,34 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="cta" className="wrapper style4">
-      <div className="inner">
+    <section id="cta" className="wrapper style4 align-center">
+      <div className="align-center">
         <header>
           <h2>Join Us</h2>
           <p>
             Sign up for out mailing list to keep up to date with our progress,
             and find out about educational opportunities.
           </p>
-        </header>
-        <ul className="actions stacked">
-          <li>
-            <Link to="/#" className="button fit primary">
-              Sign Up
-            </Link>
-          </li>
-          <li>
             <Link to="/#" className="button fit">
               Learn More
             </Link>
-          </li>
-        </ul>
-      </div>
+            <Link to="/#" className="button fit">
+              Learn More
+            </Link>
+        </header>
+        </div>
+      <div className="align-center">
+      <header className="align-center">
+        <h3 ><label for="tlemail">Your email address</label></h3> 
+        <p className="fit narrow"> <input type="text" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/>
+
+
+ <form action="https://tinyletter.com/TeaInstitute" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/TeaInstitute', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"></form>
+
+            <input className="button fit" type="submit" value="Subscribe" />
+
+      </header>
+     </div>
     </section>
   </Layout>
 );
