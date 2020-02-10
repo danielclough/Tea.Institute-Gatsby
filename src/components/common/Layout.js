@@ -3,12 +3,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import Layout from '../Layout';
+
 
 import { Navigation } from '.'
-import config from '../../utils/siteConfig'
-
-// Styles
-import '../../styles/app.css'
 
 /**
 * Main layout component
@@ -24,87 +22,19 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
 
     return (
-        <>
-            <Helmet>
-                <html lang={site.lang} />
-                <style type="text/css">{`${site.codeinjection_styles}`}</style>
-                <body className={bodyClass} />
-            </Helmet>
-
-            <div className="viewport">
-
-                <div className="viewport-top">
-                    
-                        <div className="site-mast">
-                            <div className="site-mast-left">
-                                <Link to="/">
-                                    {site.logo ?
-                                        <img className="site-logo-top" src={site.icon} alt={site.title} />
-                                        : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
-                                    }
-                                    <p className="site-title-top">{site.title}</p>
-                                </Link>
-
-                            </div>
-                            <nav className="site-nav">
-                                <div className="site-nav-left">
-                                    {/* The navigation items as setup in Ghost */}
-                                    <Navigation data={site.navigation} navClass="site-nav-item" />
-                                </div>
-                            </nav>
-                            <div className="site-mast-right">
-                                { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
-                                { site.facebook && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
-                                <a className="site-nav-item" href={ `https://instagram.com/tea.institute` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/instagram.svg" alt="Instagram" /></a>
-                            </div>
-                                <div className="site-nav-right">
-                                    <a className="site-nav-button" href="https://admin.tea.institute/ghost">Admin</a>
-                                </div>
-                    </div>
-
-
-                    {/* The main header section on top of the screen */}
-                    <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
-                        <div className="container">
-                            { isHome ?
-
-                                    <Link className="site-banner" to="/">
-                                        {site.logo ?
-                                            <img className="site-logo" src={site.icon} alt={site.title} />
-                                            : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
-                                        }
-                                        <h1 className="site-banner-title">{site.title}</h1>
-                                        <p className="site-banner-desc">{site.description}</p>
-                                    </Link>
- :
-                                null}
-                        </div>
-
-                    <main className="site-main">
-                        {/* All the main content gets inserted here, index.js, post.js */}
-                        {children}
-                    </main>
-                    </header>
-
-                </div>
-
-                <div className="viewport-bottom">
-                    {/* The footer at the very bottom of the screen */}
-                    <footer className="site-foot">
-                        <div className="site-foot-nav container">
-                            <div className="site-foot-nav-left">
-                                <Link to="/">{site.title}</Link> © 2020  
-                            </div>
-                            <div className="site-foot-nav-right">
-                                <Navigation data={site.navigation} navClass="site-foot-nav-item" />
-                            </div>
-                        </div>
-                    </footer>
-
-                </div>
+            <Layout fullMenu>
+                <article id="main">
+                      <header>
+        <h2>Tea.Institute</h2>
+      </header>
+            <section className="wrapper style4 align-center">
+        <div className="inner">
+                    {children}
             </div>
+            </section>
+                </article>
+            </Layout>     
 
-        </>
     )
 }
 

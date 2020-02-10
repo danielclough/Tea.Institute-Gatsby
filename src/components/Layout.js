@@ -7,6 +7,9 @@ import '../assets/sass/main.scss';
 import Footer from './Footer';
 import SideBar from './Sidebar';
 
+import config from '../../config'
+
+
 class Layout extends Component {
   constructor(props) {
     super(props);

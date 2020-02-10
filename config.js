@@ -15,7 +15,7 @@ module.exports = {
     themeColor: `#15171A`, // Used for Offline Manifest
   siteTitle: 'Tea.Institute', // <title>
   manifestName: 'Tea.Institute',
-  pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `/blog`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Tea.Institute',
   subHeading: 'Tea Online',
   // social

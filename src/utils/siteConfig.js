@@ -1,5 +1,6 @@
 module.exports = {
     siteUrl: `https://Tea.Institute`, // Site domain. Do not include a trailing slash!
+    pathPrefix: `/blog`, // This path is subpath of your hosting https://domain/portfolio
 
     postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
