@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
 
 import { Layout, PostCard, Pagination } from '../components/common'
 import { MetaData } from '../components/common/meta'
@@ -31,9 +30,9 @@ const Author = ({ data, location, pageContext }) => {
                             <h1>{author.name}</h1>
                             {author.bio && <p>{author.bio}</p>}
                             <div className="author-header-meta">
-                                {author.website && <a className="author-header-item" href={author.website} target="_blank" rel="noopener noreferrer">Website</a>}
-                                {twitterUrl && <a className="author-header-item" href={twitterUrl} target="_blank" rel="noopener noreferrer">Twitter</a>}
-                                {facebookUrl && <a className="author-header-item" href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
+                                {author.website && <Link to={author.website} className="author-header-item"  target="_blank" rel="noopener noreferrer">Website</Link>}
+                                {twitterUrl && <Link to={twitterUrl}  className="author-header-item" target="_blank" rel="noopener noreferrer">Twitter</Link>}
+                                {facebookUrl && <Link to={facebookUrl}  className="author-header-item" target="_blank" rel="noopener noreferrer">Facebook</Link>}
                             </div>
                         </div>
                         <div className="author-header-image">

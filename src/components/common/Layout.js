@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../Layout';
+import '../../styles/app.css'
 
 
 import { Navigation } from '.'
@@ -24,9 +25,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     return (
             <Layout fullMenu>
                 <article id="main">
-                      <header>
-        <h2>Tea.Institute</h2>
-      </header>
             <section className="wrapper style4 align-center">
         <div className="inner">
                     {children}

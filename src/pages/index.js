@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Scroll from '../components/Scroll';
 import config from '../../config';
+import { Link, StaticQuery, graphql } from 'gatsby';
 
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
@@ -15,17 +16,17 @@ const IndexPage = () => (
         <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
-              <a href="/#" className="button primary">
-                Explore
-              </a>
+              <Link to="/#" className="button primary">
+                Sign Up
+              </Link>
             </Scroll>
           </li>
         </ul>
       </div>
       <Scroll type="id" element="one">
-        <a href="#one" className="more">
+        <Link to="#one" className="more">
           Learn More
-        </a>
+        </Link>
       </Scroll>
     </section>
 
@@ -33,31 +34,38 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>
-            Arcu aliquet vel lobortis ata nisl
+            Tea is the world's favorite Beverage
             <br />
-            eget augue amet aliquet nisl cep donec
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+            Learn more about tea from all over the world!
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            The Culture and Science of Tea 
           </p>
         </header>
         <ul className="icons major">
           <li>
-            <span className="icon fa-gem major style1">
+            <span className="icon fa-envira major brands style2">
               <span className="label">Lorem</span>
             </span>
           </li>
           <li>
-            <span className="icon fa-heart major style2">
+            <span className="icon fa-envira major brands style2">
+              <span className="label">Lorem</span>
+            </span>
+          </li>
+          <li>
+            <span className="icon fa-envira major brands style2">
+              <span className="label">Lorem</span>
+            </span>
+          </li>
+          <li>
+            <span className="icon fa-envira major brands style2">
               <span className="label">Ipsum</span>
             </span>
           </li>
           <li>
-            <span className="icon solid fa-code major style3">
+            <span className="icon  fa-envira major brands style2">
               <span className="label">Dolor</span>
             </span>
           </li>
@@ -72,13 +80,13 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Magna primis lobortis
+            Turn over a new leaf
             <br />
-            sed ullamcorper
+            and discover a fantastic adventure!
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Explore the world of tea from your device or oversea and mountain side.
+            Together we can learn more, and share tea across the globe.
           </p>
         </div>
       </section>
@@ -88,13 +96,13 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Tortor dolore feugiat
+            Knowing your preference
             <br />
-            elementum magna
+            is the art of tea mastery.
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            The landscapes of aroma and flavor unlock the secrets of tea terroir.
+            Every cup of tea is unique, as every taste of life is precious.
           </p>
         </div>
       </section>
@@ -104,13 +112,13 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Augue eleifend aliquet
+            A perfect cup of tea
             <br />
-            sed condimentum
+            is cared for from feild to cup.
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            The secret to good tea is no secret. It is attention to detail
+             in the moment, and cultivating experience.
           </p>
         </div>
       </section>
@@ -119,56 +127,26 @@ const IndexPage = () => (
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
+          <h2>Database of Tea</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+            Our goal is to compile a database for tea enthusiasts, scientists, and scolars. 
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            Keeping you up to date on the latest tea science, culture, and tradition.
           </p>
         </header>
         <ul className="features">
           <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
+            <h3>Consumer Saftey</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Our first concern is to investigate into possible 
+              illegal pesticide residues on conventional and organic teas.
             </p>
           </li>
           <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
+            <h3>Education</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Education is more than just technical skill and data collection.
+              We are also dedicated to the pursuit of pleasure!
             </p>
           </li>
         </ul>
@@ -178,22 +156,22 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
+          <h2>Join Us</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
+            Sign up for out mailing list to keep up to date with our progress,
+            and find out about educational opportunities.
           </p>
         </header>
         <ul className="actions stacked">
           <li>
-            <a href="/#" className="button fit primary">
-              Activate
-            </a>
+            <Link to="/#" className="button fit primary">
+              Sign Up
+            </Link>
           </li>
           <li>
-            <a href="/#" className="button fit">
+            <Link to="/#" className="button fit">
               Learn More
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
