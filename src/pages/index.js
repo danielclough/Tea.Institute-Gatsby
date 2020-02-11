@@ -16,7 +16,7 @@ const IndexPage = () => (
         <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
-              <Link to="/#" className="button primary">
+              <Link to="/#cta" className="button primary">
                 Sign Up
               </Link>
             </Scroll>
@@ -38,9 +38,8 @@ const IndexPage = () => (
             <br />
           </h2>
           <p>
-            Learn more about tea from all over the world!
-            <br />
-            The Culture and Science of Tea 
+            Learn about tea from all over the world!
+            
           </p>
         </header>
         <ul className="icons major">
