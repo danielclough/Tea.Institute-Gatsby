@@ -154,7 +154,7 @@ const IndexPage = () => (
     </section>
 
     <section id="cta" className="wrapper style4 align-center">
-      <div className="align-center">
+      <div className="align-center inner">
         <header>
           <h2>Join Us</h2>
           <p>
@@ -165,18 +165,14 @@ const IndexPage = () => (
               Learn More
             </Link>
         </header>
-        </div>
-      <div className="align-center">
-      <header className="align-center">
-        <h3 ><label for="tlemail">Your email address</label></h3> 
-        <p className="fit narrow"> <input type="text" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/>
-
-
- <form action="https://tinyletter.com/TeaInstitute" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/TeaInstitute', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"></form>
-
-            <input className="button fit" type="submit" value="Subscribe" />
-
-      </header>
+      </div>
+      <div className="align-center inner">
+        <header className="align-center">
+          <h3 ><label for="tlemail">Your email address</label></h3> 
+          <p className="fit narrow"> <input type="text" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/>
+          <form action="https://tinyletter.com/TeaInstitute" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/TeaInstitute', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"></form>
+          <input className="button fit" type="submit" value="Subscribe" />
+        </header>
      </div>
     </section>
   </Layout>

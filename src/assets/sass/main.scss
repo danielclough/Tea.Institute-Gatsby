@@ -1728,8 +1728,8 @@
 
 			header {
 				@include vendor('order', '1');
-				padding-right: 3em;
 				width: 70%;
+				margin: 0 auto;
 
 				p {
 					color: inherit;
@@ -1738,7 +1738,7 @@
 
 			.actions {
 				@include vendor('order', '2');
-				width: 30%;
+				width: 70%;
 			}
 
 			@include breakpoint('<=medium') {
@@ -1746,7 +1746,6 @@
 				text-align: center;
 
 				header {
-					padding-right: 0;
 					width: 100%;
 				}
 
