@@ -164,9 +164,6 @@ const IndexPage = () => (
             <Link to="/#" className="button fit">
               Learn More
             </Link>
-            <Link to="/#" className="button fit">
-              Learn More
-            </Link>
         </header>
         </div>
       <div className="align-center">
