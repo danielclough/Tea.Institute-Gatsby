@@ -22,7 +22,7 @@ export default () => (
     }}
     onSubmit={
 	  (values, actions) => {
-        fetch("/", {
+        fetch("/?no-cache=1", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: encode({ "form-name": "tea-tasting", ...values })
@@ -55,7 +55,13 @@ export default () => (
 
   {() => (
 		<Form className="tansparent" name="tea-tasting" data-netlify={true}>
-
+                <input type="hidden" name="form-name" value="contact" />
+                <div hidden>
+                  <label>
+                    Don’t fill this out:{' '}
+                    <input name="bot-field" onChange={this.handleChange} />
+                  </label>
+                </div>
 	      <h1> Personal Info </h1>
 
 	      <label htmlFor="userName">Your Name: </label>
