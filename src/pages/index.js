@@ -12,7 +12,7 @@ const IndexPage = () => (
     <section id="banner">
       <div className="inner">
         <h2>{config.heading}</h2>
-        <p>{config.subHeading}</p>
+        <p></p>
         <ul className="actions special">
           <li>
             <Scroll type="id" element="one">

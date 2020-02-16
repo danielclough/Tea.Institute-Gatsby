@@ -162,6 +162,10 @@ export default () => (
 	      <ErrorMessage name="FIX" />
 	   	      
 <br />
+	      
+	      <label htmlFor="Score">Overall Score 1-10: </label>
+	      <Field name="Score" type="number" />
+	      <ErrorMessage name="Score" />
 
 	      <button type="submit">Send</button>
 	    </Form>

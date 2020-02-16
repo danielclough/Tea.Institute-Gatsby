@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Nav from './Nav';
 import { Link } from 'gatsby';
+import { Layout, PostCard, Pagination } from '../components/common'
+
+
 export default function SideBar({ fullMenu }) {
   const [headerOpen, toggleHeader] = useState(false);
   return (
@@ -12,5 +15,6 @@ export default function SideBar({ fullMenu }) {
         <Nav onMenuToggle={() => toggleHeader(!headerOpen)} />
       </div>
     </header>
+
   );
 }
