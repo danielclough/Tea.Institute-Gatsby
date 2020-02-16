@@ -56,12 +56,6 @@ export default () => (
   {() => (
 		<Form className="tansparent" name="tea-tasting" data-netlify={true}>
                 <input type="hidden" name="form-name" value="contact" />
-                <div hidden>
-                  <label>
-                    Don’t fill this out:{' '}
-                    <input name="bot-field" onChange={this.handleChange} />
-                  </label>
-                </div>
 	      <h1> Personal Info </h1>
 
 	      <label htmlFor="userName">Your Name: </label>
