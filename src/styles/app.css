@@ -823,3 +823,20 @@ a:hover {
     color: var(--color-secondary);
     font-size: 1.3rem;
 }
+
+#one {
+    padding-top: 2em;
+    padding-bottom: 0;
+    font-size: 130%;
+}
+#one p {
+    padding-top: 2em;
+    margin: 0;
+}
+#one .icons {
+    margin: 0 auto;
+    padding: 1%;
+}
+header.major {
+    margin-bottom: 0;
+}

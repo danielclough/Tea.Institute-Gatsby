@@ -1,5 +1,7 @@
 import React from 'react';
 import config from '../../config';
+import { Link } from 'gatsby';
+
 export default function Footer() {
   return (
     <footer id="footer">
@@ -18,7 +20,7 @@ export default function Footer() {
       <ul className="copyright">
         <li>&copy; Tea.Institute</li>
         <li>
-          Design: <a href="http://html5up.net">HTML5 UP</a>
+          <Link to="/credits">Credits</Link>
         </li>
       </ul>
     </footer>
