@@ -840,3 +840,8 @@ a:hover {
 header.major {
     margin-bottom: 0;
 }
+
+
+a.icon {
+    padding-left: .5em;
+}

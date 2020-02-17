@@ -22,9 +22,15 @@ module.exports = {
   socialLinks: [
     {
       style: 'brands',
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/',
+      icon: 'fa-instagram',
+      name: 'Instagram',
+      url: 'https://instagram.com/Tea.Institute',
+    },
+    {
+      style: 'brands',
+      icon: 'fa-facebook',
+      name: 'Facebook',
+      url: 'https://facebook.com/InstituteTea',
     },
     {
       style: 'brands',
@@ -33,10 +39,10 @@ module.exports = {
       url: 'https://twitter.com/Tea.Institute',
     },
     {
-      style: 'solid',
-      icon: 'fa-envelope',
-      name: 'Email',
-      url: 'mailto:test@example.com',
+      style: 'brands',
+      icon: 'fa-github',
+      name: 'Github',
+      url: 'https://github.com/danielclough',
     },
   ],
 };
