@@ -59,11 +59,6 @@ const IndexPage = () => (
             </span>
           </li>
           <li>
-            <span className="icon fa-envira major brands style2">
-              <span className="label">Ipsum</span>
-            </span>
-          </li>
-          <li>
             <span className="icon  fa-envira major brands style2">
               <span className="label">Dolor</span>
             </span>
