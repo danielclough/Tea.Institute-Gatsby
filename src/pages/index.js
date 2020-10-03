@@ -130,7 +130,7 @@ const IndexPage = () => (
         </header>
         <ul className="features">
           <li className="icon fa-paper-plane">
-            <h3>Consumer Saftey</h3>
+            <h3>Consumer Safety</h3>
             <p>
               Our first concern is to investigate into possible 
               illegal pesticide residues on conventional and organic teas.
