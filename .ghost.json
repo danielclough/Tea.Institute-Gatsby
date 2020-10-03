@@ -1,10 +1,10 @@
 {
   "development": {
     "apiUrl": "https://admin.tea.institute",
-    "contentApiKey": "435370a79744f402eb95e5040a"
+    "contentApiKey": "0ef6d403bfb9d353e902e77da5"
   },
   "production": {
     "apiUrl": "https://admin.tea.institute",
-    "contentApiKey": "435370a79744f402eb95e5040a"
+    "contentApiKey": "0ef6d403bfb9d353e902e77da5"
   }
 }
