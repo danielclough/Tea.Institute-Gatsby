@@ -16,7 +16,7 @@ const IndexPage = () => (
         <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
-              <Link to="/#cta" className="button primary">
+              <Link to="#cta" className="button primary">
                 Sign Up
               </Link>
             </Scroll>
@@ -123,7 +123,7 @@ const IndexPage = () => (
         <header className="major">
           <h2>Database of Tea</h2>
           <p>
-            Our goal is to compile a database for tea enthusiasts, scientists, and scolars. 
+            Our goal is to compile a database for tea enthusiasts, scientists, and scholars. 
             <br />
             Keeping you up to date on the latest tea science, culture, and tradition.
           </p>
